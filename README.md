@@ -1,4 +1,4 @@
 # simple-design-patterns
-simple design patterns
+simple design patter
 
-Java设计模式
+Java璁捐妯″紡
