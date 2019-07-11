@@ -25,13 +25,11 @@ public class SingletonDemo extends UnitTest {
         Staff staff3 = new Staff();
         Staff staff4 = new Staff();
         Staff staff5 = new Staff();
-        Staff staff6 = new Staff();
         company.addPerson(staff1);
         company.addPerson(staff2);
         company.addPerson(staff3);
         company.addPerson(staff4);
         company.addPerson(staff5);
-        company.addPerson(staff6);
 
         company.meeting();
     }
