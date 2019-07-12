@@ -14,11 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // 1.单例模式
-        SingletonDemo singletonDemo = new SingletonDemo();
-        singletonDemo.main();
+        PatternRunner.getInstance().execPattern(new SingletonDemo());
 
-        // 2.builder模式
-        BuilderDemo builderDemo = new BuilderDemo();
-        builderDemo.main();
+        // 2.Builder模式
+        PatternRunner.getInstance().execPattern(new BuilderDemo());
     }
 }
