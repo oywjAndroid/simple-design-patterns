@@ -1,8 +1,8 @@
 package com.design.patterns.create.singleton;
 
-import com.design.patterns.base.PatternTestUnit;
+import com.design.patterns.base.TestUnit;
 
-public class SingletonDemo extends PatternTestUnit {
+public class SingletonDemo extends TestUnit {
 
     @Override
     public void main() {

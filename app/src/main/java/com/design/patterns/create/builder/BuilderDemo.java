@@ -1,8 +1,8 @@
 package com.design.patterns.create.builder;
 
-import com.design.patterns.base.PatternTestUnit;
+import com.design.patterns.base.TestUnit;
 
-public class BuilderDemo extends PatternTestUnit {
+public class BuilderDemo extends TestUnit {
 
     @Override
     public void main() {
