@@ -1,11 +1,12 @@
 package com.design.patterns;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.design.patterns.base.TestUnit;
 import com.design.patterns.behavior.command.CommandSimple1Demo;
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         initView();
         setData();
         initListener();
+
     }
 
     private void initView() {
