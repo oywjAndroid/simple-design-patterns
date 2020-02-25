@@ -1,1 +1,1 @@
-include ':app', ':android_views'
+include ':app', ':android_views', ':databinding'

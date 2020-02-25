@@ -1,4 +1,4 @@
-package com.lerke.android_views.image_display;
+package com.lerke.android_views.image_display.view;
 
 import android.content.Context;
 import android.graphics.Canvas;

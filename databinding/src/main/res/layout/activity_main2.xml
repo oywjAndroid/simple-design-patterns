@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="com.mvvm.databinding.User" />
+
+        <import type="com.mvvm.databinding.MainViewModel" />
+
+        <variable
+            name="userData"
+            type="User" />
+
+        <variable
+            name="viewModel"
+            type="MainViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@{userData.name}"
+            android:textSize="30sp"
+            android:paddingLeft="@{userData.paddingLeft}"/>
+
+
+        <com.mvvm.databinding.bindMethod.ToastTextView
+            android:id="@+id/password_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@{userData.password}"
+            android:textSize="30sp"
+            app:showText="@{userData.password}" />
+
+
+        <Button
+            android:id="@+id/change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:onClick="@{viewModel::onClickChange}"
+            android:text="更改"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/change_btn"
+            app:errorDrawableId="@{userData.errorDrawableId}"
+            app:imageUrl="@{userData.imageUrl}" />
+
+        <ViewStub
+            android:id="@+id/viewStub"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout="@layout/activity_main2_bottom_view" />
+
+    </RelativeLayout>
+
+</layout>
